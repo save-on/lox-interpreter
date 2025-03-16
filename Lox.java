@@ -1,4 +1,5 @@
 // Package name
+package jj.lox;
 
 import java.io.BufferedReader;
 import java.io.IOException; // This help detect ^ errors?
