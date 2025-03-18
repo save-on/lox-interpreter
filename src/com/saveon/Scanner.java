@@ -98,6 +98,8 @@ class Scanner {
         if (match('/')) {
           while (peek() != '\n' && !isAtEnd())
             advance();
+        } else if (match('*')) {
+          multiComment();
         } else {
           addToken(SLASH);
         }
@@ -167,6 +169,21 @@ class Scanner {
 
     String value = source.substring(start + 1, current - 1);
     addToken(STRING, value);
+  }
+
+  private void multiComment() {
+    while (!isAtEnd()) {
+      if (peek() == '\n') {
+        line++;
+      }
+      if (peek() == '*' && peekNext() == '/') {
+        advance();
+        advance();
+        return;
+      }
+      advance();
+    }
+    Lox.error(line, "Unterminated Multiline comment");
   }
 
   private boolean match(char expected) {
