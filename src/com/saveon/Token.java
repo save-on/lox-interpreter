@@ -1,4 +1,4 @@
-package jj.lox;
+package com.saveon;
 
 class Token {
   final TokenType type;

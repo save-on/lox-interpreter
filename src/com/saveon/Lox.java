@@ -1,8 +1,7 @@
-// Package name
-package jj.lox;
+package com.saveon;
 
 import java.io.BufferedReader;
-import java.io.IOException; // This help detect ^ errors?
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.nio.file.Files;

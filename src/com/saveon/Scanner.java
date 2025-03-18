@@ -1,11 +1,11 @@
-package jj.lox;
+package com.saveon;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static jj.lox.TokenType.*;
+import static com.saveon.TokenType.*;
 
 class Scanner {
   private final String source;

@@ -1,4 +1,4 @@
-package jj.lox;
+package com.saveon;
 
 enum TokenType {
   // Single character tokens
