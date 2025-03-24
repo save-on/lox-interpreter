@@ -1,5 +1,4 @@
 # Lox Interpreter
----
 
 Following along with the book Crafting Interpreters
 
